@@ -11,7 +11,7 @@ import io.netty.channel.group.DefaultChannelGroup;
 
 import io.netty.util.concurrent.GlobalEventExecutor;
 
-
+//TextWebSocketFrame：处理消息的handler，在Netty中用于处理文本的对象，frames是消息的载体
 public class ChatHandler extends SimpleChannelInboundHandler<TextWebSocketFrame>{
 
 	//用于记录和管理所有客户端的channel，可以把相应的channel保存到一整个组中
